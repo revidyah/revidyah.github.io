@@ -1,28 +1,41 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Landing Page</title>
-    <script src="bg.webp"></script>
     <style>
-        body {
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1, #fc6076, #ff9a9e);
-            background-size: 400% 400%;
-            animation: gradientBG 10s ease infinite;
-        }
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+      body {
+        background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url('bg.webp');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .title {
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 20px #000000;
+      }
+      .subtitle {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+      }
     </style>
-</head>
-<body class="flex flex-col items-center justify-center min-h-screen text-center p-6">
-    <h1 class="text-4xl font-bold text-white bg-black bg-opacity-50 px-6 py-3 rounded-lg shadow-lg">Horanghae 🐯</h1>
-    <h3 class="text-xl text-white bg-black bg-opacity-50 px-6 py-2 mt-4 rounded-lg shadow-lg">Welcome to My Study Hub</h3>
-    
-    
-    <a href="https://revidyah.github.io/M5/" target="_blank" class="mt-6 px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-yellow-500">Menuju CV Bootstrap</a>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Horanghae! 🐯</div>
+      <div class="subtitle">Welcome to My Study Hub</div>
+      <div a href="https://finanurazizah.github.io/praksigweb/" target="_blank" class="mt-6 px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-yellow-500">Menuju CV Bootstrap</a></div>
+    </div>
+  </body>
 </html>
